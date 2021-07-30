@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subjects",
+  "info": {
+    "name": "Subjects"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subject_id": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "teachers": {
+      "via": "subjects",
+      "collection": "teachers"
+    }
+  }
+}

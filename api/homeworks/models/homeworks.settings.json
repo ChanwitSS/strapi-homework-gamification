@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homework",
+  "info": {
+    "name": "Homeworks"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "homework_name": {
+      "type": "string"
+    },
+    "students": {
+      "via": "homework",
+      "collection": "students"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student",
+  "info": {
+    "name": "Students",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "total_point": {
+      "type": "integer",
+      "default": 0
+    },
+    "homework": {
+      "collection": "homeworks",
+      "via": "students",
+      "dominant": true
+    }
+  }
+}

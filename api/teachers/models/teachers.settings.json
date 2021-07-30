@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teachers",
+  "info": {
+    "name": "Teachers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subjects": {
+      "collection": "subjects",
+      "via": "teachers",
+      "dominant": true
+    }
+  }
+}
