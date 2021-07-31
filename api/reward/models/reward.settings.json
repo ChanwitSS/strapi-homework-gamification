@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "homework",
+  "collectionName": "rewards",
   "info": {
-    "name": "Homeworks",
+    "name": "Reward",
     "description": ""
   },
   "options": {
@@ -12,21 +12,18 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "homework_name": {
-      "type": "string"
-    },
-    "homework_ID": {
+    "reward_ID": {
       "type": "biginteger"
     },
-    "description": {
+    "reward_name": {
       "type": "string"
     },
-    "point": {
+    "reward_point": {
       "type": "integer"
     },
-    "subjects": {
-      "via": "homework",
-      "collection": "subjects"
+    "reward_remain": {
+      "type": "integer",
+      "default": 0
     }
   }
 }

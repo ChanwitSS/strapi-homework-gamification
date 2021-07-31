@@ -8,7 +8,7 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -16,10 +16,18 @@
       "type": "integer",
       "default": 0
     },
-    "homework": {
-      "collection": "homeworks",
+    "subjects": {
       "via": "students",
+      "collection": "subjects",
       "dominant": true
+    },
+    "student_ID": {
+      "type": "biginteger"
+    },
+    "user": {
+      "via": "student",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

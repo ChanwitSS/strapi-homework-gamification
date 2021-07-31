@@ -2,23 +2,34 @@
   "kind": "collectionType",
   "collectionName": "subjects",
   "info": {
-    "name": "Subjects"
+    "name": "Subjects",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "subject_id": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
     "teachers": {
       "via": "subjects",
       "collection": "teachers"
+    },
+    "students": {
+      "via": "subjects",
+      "collection": "students"
+    },
+    "subject_name": {
+      "type": "string"
+    },
+    "homework": {
+      "via": "subjects",
+      "collection": "homeworks",
+      "dominant": true
+    },
+    "subject_id": {
+      "type": "biginteger"
     }
   }
 }
