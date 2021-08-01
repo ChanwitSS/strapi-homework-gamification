@@ -28,6 +28,10 @@
       "via": "student",
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "rewards": {
+      "via": "student",
+      "collection": "reward"
     }
   }
 }

@@ -24,6 +24,10 @@
     "reward_remain": {
       "type": "integer",
       "default": 0
+    },
+    "student": {
+      "model": "students",
+      "via": "rewards"
     }
   }
 }
