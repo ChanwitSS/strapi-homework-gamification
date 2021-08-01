@@ -12,22 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "reward_ID": {
-      "type": "biginteger"
-    },
     "reward_name": {
       "type": "string"
     },
     "reward_point": {
       "type": "integer"
     },
-    "reward_remain": {
-      "type": "integer",
-      "default": 0
-    },
     "student": {
-      "model": "students",
-      "via": "rewards"
+      "via": "rewards",
+      "model": "students"
     }
   }
 }

@@ -27,9 +27,6 @@
       "via": "subjects",
       "collection": "homeworks",
       "dominant": true
-    },
-    "subject_id": {
-      "type": "biginteger"
     }
   }
 }

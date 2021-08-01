@@ -17,13 +17,14 @@
       "collection": "subjects",
       "dominant": true
     },
-    "teacher_ID": {
-      "type": "biginteger"
-    },
     "user": {
       "via": "teacher",
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "homework": {
+      "via": "teachers",
+      "collection": "homeworks"
     }
   }
 }

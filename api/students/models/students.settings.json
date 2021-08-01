@@ -21,9 +21,6 @@
       "collection": "subjects",
       "dominant": true
     },
-    "student_ID": {
-      "type": "biginteger"
-    },
     "user": {
       "via": "student",
       "plugin": "users-permissions",
@@ -32,6 +29,10 @@
     "rewards": {
       "via": "student",
       "collection": "reward"
+    },
+    "homeworks": {
+      "via": "students",
+      "collection": "homeworks"
     }
   }
 }
