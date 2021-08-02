@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "student",
+  "collectionName": "students",
   "info": {
     "name": "Students",
     "description": ""
@@ -16,18 +16,24 @@
       "type": "integer",
       "default": 0
     },
-    "subjects": {
-      "via": "students",
-      "collection": "subjects",
-      "dominant": true
-    },
-    "student_ID": {
-      "type": "biginteger"
-    },
     "user": {
       "via": "student",
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "subjects": {
+      "via": "students",
+      "collection": "subjects"
+    },
+    "rewards": {
+      "collection": "rewards",
+      "via": "students",
+      "dominant": true
+    },
+    "homework": {
+      "collection": "homeworks",
+      "via": "students",
+      "dominant": true
     }
   }
 }

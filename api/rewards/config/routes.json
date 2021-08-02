@@ -3,7 +3,7 @@
     {
       "method": "GET",
       "path": "/rewards",
-      "handler": "reward.find",
+      "handler": "rewards.find",
       "config": {
         "policies": []
       }
@@ -11,7 +11,7 @@
     {
       "method": "GET",
       "path": "/rewards/count",
-      "handler": "reward.count",
+      "handler": "rewards.count",
       "config": {
         "policies": []
       }
@@ -19,7 +19,7 @@
     {
       "method": "GET",
       "path": "/rewards/:id",
-      "handler": "reward.findOne",
+      "handler": "rewards.findOne",
       "config": {
         "policies": []
       }
@@ -27,7 +27,7 @@
     {
       "method": "POST",
       "path": "/rewards",
-      "handler": "reward.create",
+      "handler": "rewards.create",
       "config": {
         "policies": []
       }
@@ -35,7 +35,7 @@
     {
       "method": "PUT",
       "path": "/rewards/:id",
-      "handler": "reward.update",
+      "handler": "rewards.update",
       "config": {
         "policies": []
       }
@@ -43,7 +43,7 @@
     {
       "method": "DELETE",
       "path": "/rewards/:id",
-      "handler": "reward.delete",
+      "handler": "rewards.delete",
       "config": {
         "policies": []
       }

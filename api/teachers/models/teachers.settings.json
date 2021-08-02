@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "teachers",
   "info": {
-    "name": "Teachers",
-    "description": ""
+    "name": "Teachers"
   },
   "options": {
     "increments": true,
@@ -12,13 +11,15 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "homework": {
+      "collection": "homeworks",
+      "via": "teachers",
+      "dominant": true
+    },
     "subjects": {
       "via": "teachers",
       "collection": "subjects",
       "dominant": true
-    },
-    "teacher_ID": {
-      "type": "biginteger"
     },
     "user": {
       "via": "teacher",

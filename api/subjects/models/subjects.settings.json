@@ -12,24 +12,22 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "subject_name": {
+      "type": "string"
+    },
     "teachers": {
       "via": "subjects",
       "collection": "teachers"
     },
-    "students": {
-      "via": "subjects",
-      "collection": "students"
-    },
-    "subject_name": {
-      "type": "string"
-    },
     "homework": {
-      "via": "subjects",
       "collection": "homeworks",
+      "via": "subjects",
       "dominant": true
     },
-    "subject_id": {
-      "type": "biginteger"
+    "students": {
+      "via": "subjects",
+      "collection": "students",
+      "dominant": true
     }
   }
 }

@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "rewards",
   "info": {
-    "name": "Reward",
-    "description": ""
+    "name": "Rewards"
   },
   "options": {
     "increments": true,
@@ -12,9 +11,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "reward_ID": {
-      "type": "biginteger"
-    },
     "reward_name": {
       "type": "string"
     },
@@ -22,8 +18,11 @@
       "type": "integer"
     },
     "reward_remain": {
-      "type": "integer",
-      "default": 0
+      "type": "integer"
+    },
+    "students": {
+      "via": "rewards",
+      "collection": "students"
     }
   }
 }

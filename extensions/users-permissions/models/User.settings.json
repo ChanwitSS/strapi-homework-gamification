@@ -59,22 +59,22 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "user_ID": {
-      "type": "biginteger"
-    },
-    "student": {
-      "via": "user",
-      "model": "students"
-    },
-    "teacher": {
-      "via": "user",
-      "model": "teachers"
-    },
     "first_name": {
       "type": "string"
     },
     "last_name": {
       "type": "string"
+    },
+    "user_ID": {
+      "type": "integer"
+    },
+    "teacher": {
+      "model": "teachers",
+      "via": "user"
+    },
+    "student": {
+      "via": "user",
+      "model": "students"
     }
   }
 }
