@@ -35,6 +35,10 @@
     "students": {
       "via": "homework",
       "collection": "students"
+    },
+    "attachments": {
+      "via": "homework",
+      "collection": "attachment"
     }
   }
 }
