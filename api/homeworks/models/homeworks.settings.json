@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "homework",
+  "collectionName": "homeworks",
   "info": {
-    "name": "Homeworks"
+    "name": "Homeworks",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -14,9 +15,30 @@
     "homework_name": {
       "type": "string"
     },
+    "description": {
+      "type": "string"
+    },
+    "point": {
+      "type": "integer"
+    },
+    "due_date": {
+      "type": "datetime"
+    },
+    "teachers": {
+      "via": "homework",
+      "collection": "teachers"
+    },
+    "subjects": {
+      "via": "homework",
+      "collection": "subjects"
+    },
     "students": {
       "via": "homework",
       "collection": "students"
+    },
+    "attachments": {
+      "via": "homework",
+      "collection": "attachment"
     }
   }
 }

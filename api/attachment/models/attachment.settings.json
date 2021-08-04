@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "attachments",
+  "info": {
+    "name": "Attachment",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "attachment_file": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "students": {
+      "via": "attachment",
+      "collection": "students"
+    },
+    "homework": {
+      "model": "homeworks",
+      "via": "attachments"
+    }
+  }
+}

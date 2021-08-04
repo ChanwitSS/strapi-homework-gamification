@@ -7,14 +7,24 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "subjects": {
-      "collection": "subjects",
+    "homework": {
+      "collection": "homeworks",
       "via": "teachers",
       "dominant": true
+    },
+    "subjects": {
+      "via": "teachers",
+      "collection": "subjects",
+      "dominant": true
+    },
+    "user": {
+      "via": "teacher",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

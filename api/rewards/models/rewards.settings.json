@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rewards",
+  "info": {
+    "name": "Rewards"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "reward_name": {
+      "type": "string"
+    },
+    "reward_point": {
+      "type": "integer"
+    },
+    "reward_remain": {
+      "type": "integer"
+    },
+    "students": {
+      "via": "rewards",
+      "collection": "students"
+    }
+  }
+}
