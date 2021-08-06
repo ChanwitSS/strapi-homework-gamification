@@ -15,19 +15,15 @@
     "subject_name": {
       "type": "string"
     },
-    "teachers": {
-      "via": "subjects",
-      "collection": "teachers"
-    },
     "homework": {
       "collection": "homeworks",
-      "via": "subjects",
+      "via": "subject",
       "dominant": true
     },
-    "students": {
+    "users": {
       "via": "subjects",
-      "collection": "students",
-      "dominant": true
+      "plugin": "users-permissions",
+      "collection": "user"
     }
   }
 }

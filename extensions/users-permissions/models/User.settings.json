@@ -68,13 +68,32 @@
     "user_ID": {
       "type": "integer"
     },
-    "teacher": {
-      "model": "teachers",
+    "total_point": {
+      "type": "integer"
+    },
+    "left_point": {
+      "type": "integer"
+    },
+    "used_point": {
+      "type": "integer"
+    },
+    "rewards": {
+      "collection": "rewards",
+      "via": "users",
+      "dominant": true
+    },
+    "homework": {
+      "collection": "homeworks",
       "via": "user"
     },
-    "student": {
-      "via": "user",
-      "model": "students"
+    "subjects": {
+      "via": "users",
+      "collection": "subjects",
+      "dominant": true
+    },
+    "attachments": {
+      "collection": "attachment",
+      "via": "user"
     }
   }
 }

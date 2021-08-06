@@ -24,13 +24,14 @@
       "required": false,
       "pluginOptions": {}
     },
-    "students": {
-      "via": "attachment",
-      "collection": "students"
-    },
     "homework": {
       "model": "homeworks",
       "via": "attachments"
+    },
+    "user": {
+      "via": "attachments",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

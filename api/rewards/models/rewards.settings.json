@@ -20,9 +20,10 @@
     "reward_remain": {
       "type": "integer"
     },
-    "students": {
+    "users": {
       "via": "rewards",
-      "collection": "students"
+      "plugin": "users-permissions",
+      "collection": "user"
     }
   }
 }
