@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/students",
-      "handler": "students.find",
+      "path": "/attachments",
+      "handler": "attachment.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/students/count",
-      "handler": "students.count",
+      "path": "/attachments/count",
+      "handler": "attachment.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/students/:id",
-      "handler": "students.findOne",
+      "path": "/attachments/:id",
+      "handler": "attachment.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/students",
-      "handler": "students.create",
+      "path": "/attachments",
+      "handler": "attachment.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/students/:id",
-      "handler": "students.update",
+      "path": "/attachments/:id",
+      "handler": "attachment.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/students/:id",
-      "handler": "students.delete",
+      "path": "/attachments/:id",
+      "handler": "attachment.delete",
       "config": {
         "policies": []
       }

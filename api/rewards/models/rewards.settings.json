@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "rewards",
   "info": {
-    "name": "Reward",
-    "description": ""
+    "name": "Rewards"
   },
   "options": {
     "increments": true,
@@ -18,9 +17,13 @@
     "reward_point": {
       "type": "integer"
     },
-    "student": {
+    "reward_remain": {
+      "type": "integer"
+    },
+    "users": {
       "via": "rewards",
-      "model": "students"
+      "plugin": "users-permissions",
+      "collection": "user"
     }
   }
 }

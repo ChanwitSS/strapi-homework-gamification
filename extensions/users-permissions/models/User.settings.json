@@ -59,22 +59,41 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "user_ID": {
-      "type": "biginteger"
-    },
-    "student": {
-      "via": "user",
-      "model": "students"
-    },
-    "teacher": {
-      "via": "user",
-      "model": "teachers"
-    },
     "first_name": {
       "type": "string"
     },
     "last_name": {
       "type": "string"
+    },
+    "user_ID": {
+      "type": "integer"
+    },
+    "total_point": {
+      "type": "integer"
+    },
+    "left_point": {
+      "type": "integer"
+    },
+    "used_point": {
+      "type": "integer"
+    },
+    "rewards": {
+      "collection": "rewards",
+      "via": "users",
+      "dominant": true
+    },
+    "homework": {
+      "collection": "homeworks",
+      "via": "user"
+    },
+    "subjects": {
+      "via": "users",
+      "collection": "subjects",
+      "dominant": true
+    },
+    "attachments": {
+      "collection": "attachment",
+      "via": "user"
     }
   }
 }

@@ -12,21 +12,18 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "teachers": {
-      "via": "subjects",
-      "collection": "teachers"
-    },
-    "students": {
-      "via": "subjects",
-      "collection": "students"
-    },
     "subject_name": {
       "type": "string"
     },
     "homework": {
-      "via": "subjects",
       "collection": "homeworks",
+      "via": "subject",
       "dominant": true
+    },
+    "users": {
+      "via": "subjects",
+      "plugin": "users-permissions",
+      "collection": "user"
     }
   }
 }

@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/teachers",
-      "handler": "teachers.find",
+      "path": "/rewards",
+      "handler": "rewards.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/teachers/count",
-      "handler": "teachers.count",
+      "path": "/rewards/count",
+      "handler": "rewards.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/teachers/:id",
-      "handler": "teachers.findOne",
+      "path": "/rewards/:id",
+      "handler": "rewards.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/teachers",
-      "handler": "teachers.create",
+      "path": "/rewards",
+      "handler": "rewards.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/teachers/:id",
-      "handler": "teachers.update",
+      "path": "/rewards/:id",
+      "handler": "rewards.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/teachers/:id",
-      "handler": "teachers.delete",
+      "path": "/rewards/:id",
+      "handler": "rewards.delete",
       "config": {
         "policies": []
       }
