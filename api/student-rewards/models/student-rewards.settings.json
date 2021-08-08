@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student_rewards",
+  "info": {
+    "name": "Student_Reward",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "reward": {
+      "model": "rewards",
+      "via": "student_rewards"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "student_rewards"
+    },
+    "point": {
+      "type": "integer"
+    }
+  }
+}

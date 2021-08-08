@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/student-rewards",
+      "handler": "student-rewards.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/student-rewards/count",
+      "handler": "student-rewards.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/student-rewards/:id",
+      "handler": "student-rewards.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/student-rewards",
+      "handler": "student-rewards.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/student-rewards/:id",
+      "handler": "student-rewards.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/student-rewards/:id",
+      "handler": "student-rewards.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

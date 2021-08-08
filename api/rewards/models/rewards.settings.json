@@ -24,6 +24,10 @@
       "via": "rewards",
       "plugin": "users-permissions",
       "collection": "user"
+    },
+    "student_rewards": {
+      "via": "reward",
+      "collection": "student-rewards"
     }
   }
 }
