@@ -36,6 +36,10 @@
     "subject": {
       "via": "homework",
       "model": "subjects"
+    },
+    "student_homeworks": {
+      "via": "homework",
+      "collection": "student-homework"
     }
   }
 }

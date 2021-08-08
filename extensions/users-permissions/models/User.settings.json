@@ -94,6 +94,14 @@
     "attachments": {
       "collection": "attachment",
       "via": "user"
+    },
+    "student_rewards": {
+      "via": "users_permissions_user",
+      "collection": "student-rewards"
+    },
+    "student_homeworks": {
+      "via": "users_permissions_user",
+      "collection": "student-homework"
     }
   }
 }

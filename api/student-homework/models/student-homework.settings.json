@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student_homeworks",
+  "info": {
+    "name": "Student_Homework",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "homework": {
+      "model": "homeworks",
+      "via": "student_homeworks"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "student_homeworks"
+    },
+    "send_date": {
+      "type": "datetime"
+    },
+    "is_sent": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_check": {
+      "type": "boolean"
+    },
+    "point": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
