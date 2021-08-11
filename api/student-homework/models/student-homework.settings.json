@@ -13,8 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "homework": {
-      "model": "homeworks",
-      "via": "student_homeworks"
+      "via": "student_homeworks",
+      "model": "homeworks"
     },
     "users_permissions_user": {
       "plugin": "users-permissions",

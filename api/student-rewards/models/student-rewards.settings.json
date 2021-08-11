@@ -13,8 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "reward": {
-      "model": "rewards",
-      "via": "student_rewards"
+      "via": "student_rewards",
+      "model": "rewards"
     },
     "users_permissions_user": {
       "plugin": "users-permissions",
