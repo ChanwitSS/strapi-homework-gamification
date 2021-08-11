@@ -19,10 +19,12 @@
       "type": "string"
     },
     "point": {
-      "type": "integer"
+      "type": "integer",
+      "default": 5
     },
     "due_date": {
-      "type": "datetime"
+      "type": "datetime",
+      "default": "2021-08-08T17:00:00.864Z"
     },
     "attachments": {
       "via": "homework",

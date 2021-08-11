@@ -78,13 +78,13 @@
       "type": "integer"
     },
     "rewards": {
-      "collection": "rewards",
       "via": "users",
+      "collection": "rewards",
       "dominant": true
     },
     "homework": {
-      "collection": "homeworks",
-      "via": "user"
+      "via": "user",
+      "collection": "homeworks"
     },
     "subjects": {
       "via": "users",

@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "rewards",
   "info": {
-    "name": "Rewards"
+    "name": "Rewards",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -28,6 +29,18 @@
     "student_rewards": {
       "via": "reward",
       "collection": "student-rewards"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

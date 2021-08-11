@@ -16,9 +16,8 @@
       "type": "string"
     },
     "homework": {
-      "collection": "homeworks",
       "via": "subject",
-      "dominant": true
+      "collection": "homeworks"
     },
     "users": {
       "via": "subjects",
